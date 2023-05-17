@@ -1,24 +1,26 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="popup.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <h2>Add new Link</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="popup.css">
+        <script src="./add.js" defer></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Add new Link</h2>
 
-        <div class="addLinkFormDiv">
-            <form action="">
-                <input type="text" placeholder="Name" id="name">
-                <input type="text" placeholder="Link" id="link">
-                <button id="addLinkButton" type="submit">Add Link</button>
-            </form>
+            <div class="addLinkFormDiv">
+                <form class="addForm" action="">
+                    <input name="name" type="text" placeholder="Name" id="name" required>
+                    <input name="link" type="text" placeholder="Link" id="link" required>
+                    <button id="addLinkButton" type="submit">Add Link</button>
+                </form>
+            </div>
         </div>
-    </div>
 
-</body>
+    </body>
 </html>
