@@ -1,10 +1,18 @@
-const formEl = document.querySelector('.addForm');
+addButton = document.getElementById('addLinkButton');
+nameField = document.getElementById('name');
+linkField = document.getElementById('link');
 
-formEl.addEventListener('submit', event=> {
-    event.preventDefault();
+if(addButton){
+addButton.addEventListener('click', ()=> {
+    chorme.storage.local.set({'nameData':nameField }, ()=> {console.log("name data has been stored")
+    });
+    chorme.storage.local.set({'linkData':linkField },()=> {console.log("name data has been stored")
+    });
 
-    const formData = new FormData(formEl);
     
-    const data = Object.fromEntries(formData);
-    
-});
+});}
+
+
+else {
+    console.error("Could not find addLinkButton element in document");
+  }
